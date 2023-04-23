@@ -18,13 +18,12 @@ public class Empresa {
 		this.cnpj = cnpj;
 	}
 	
-	
 	public Funcionario[] getFuncionarios() {
 		return funcionarios;
 	}
 	
-	public void setFuncionario(Funcionario[] funcionario) {
-		this.funcionarios = funcionario;
+	public void setFuncionario(Funcionario funcionario, int indice) {
+		this.funcionarios[indice] = funcionario;
 	}
 }
 
