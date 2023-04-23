@@ -10,8 +10,15 @@ public class TestarEmpresa{
 	    f1.setCargo("Analista");
 	    f1.setSalario(3000.0);
 	    
+	    Funcionario f2 = new Funcionario();
+	    f2.setId(1);
+	    f2.setNome("Felipera");
+	    f2.setCargo("Analista");
+	    f2.setSalario(3000.0);
+	    
+	    
 	    fun[0] = f1;
-	    fun[1] = f1;
+	    fun[1] = f2;
 	    fun[2] = f1;
 	    
 		empresa.setNome("Liga da Justica");
