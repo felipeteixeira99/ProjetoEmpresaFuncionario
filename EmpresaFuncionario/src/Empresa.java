@@ -25,6 +25,20 @@ public class Empresa {
 	public void setFuncionario(Funcionario funcionario, int indice) {
 		this.funcionarios[indice] = funcionario;
 	}
+	
+	public void addFuncionario(Funcionario novoFuncionario) {
+	    // Cria um novo array com tamanho igual ao array atual + 1
+	    Funcionario[] novoArray = new Funcionario[funcionarios.length + 1];
+	    // Copia os funcionários do array atual para o novo array
+	    for (int i = 0; i < funcionarios.length; i++) {
+	        novoArray[i] = funcionarios[i];
+	    }
+	    // Adiciona o novo funcionário no último índice do novo array
+	    novoArray[funcionarios.length] = novoFuncionario;
+	    // Atualiza a referência do array atual para o novo array com o novo funcionário adicionado
+	    funcionarios = novoArray;
+	}
+
 }
 
 
