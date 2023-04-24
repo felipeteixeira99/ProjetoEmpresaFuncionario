@@ -37,6 +37,8 @@ public class Empresa {
 	    novoArray[funcionarios.length] = novoFuncionario;
 	    // Atualiza a referência do array atual para o novo array com o novo funcionário adicionado
 	    funcionarios = novoArray;
+	    
+	    //alteração
 	}
 
 }
